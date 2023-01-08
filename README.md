@@ -2,9 +2,7 @@
 
 This is a solution to the Art Gallery Website challenge from Frontendment which was provided by Bitcamp.
 
-# Links
 
-* Live Site URL: <a href= > Click here </a>
 
 # built-with
 
