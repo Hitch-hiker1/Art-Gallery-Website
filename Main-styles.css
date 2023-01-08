@@ -1,0 +1,241 @@
+@import "header-styles.css";
+@import "footer-styles.css";
+
+:root{
+    /*colors variables*/
+    --background-color-light:#F2F2F2;    
+    --background-color-dark:rgba(21, 21, 21, 1);
+    --rectangle-color: #D5966C;
+    --content-text-color:rgba(68, 68, 68, 1);
+    --location-text-color:white;
+    /*margin variables*/
+    --left-margin: 1.6rem;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden ;
+    font-size: 62.5%;
+}
+a, h1{
+  font-family: "Big Shoulders Display";
+}
+P{
+    font-family: "outfit";
+}
+
+
+.main-content-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--left-margin);
+    margin-right: var(--left-margin);
+    gap: 1.5rem;
+}
+
+.main-1-img{
+    width: 30rem;
+    height: 28rem;   
+}
+
+.main-1-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    max-width: 35rem;
+}
+
+.main-1-head{
+    font-size: 4.2rem;
+    color: var(--background-color-dark);
+    font-weight: 900;
+    line-height: 4rem;
+}
+
+.main-1-content{
+    font-size:1.4rem;
+    line-height: 2.2rem;
+    font-weight: 350;
+    color: var(--content-text-color);
+    width: 80%;
+}
+
+
+
+.main-2-img_text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    width: 30.3rem;
+}
+
+.main-2_1-img{
+    width: 30.3rem;
+    height: 38rem;
+}
+
+.main-2_2-img{
+    width: 30.3rem;
+}   
+
+.main-2-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--background-color-dark);
+    height: 25rem;
+    justify-content: center;
+    padding: 0 var(--left-margin);
+}
+
+.main-2-head{
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 4rem;
+    color: var(--location-text-color);
+    
+}
+
+.main-2-content{
+    color: var(--location-text-color);
+    font-weight: 200;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 48rem){
+    .main-content-container{
+        display: grid;
+        grid-template-columns: 23rem 20rem;
+        grid-template-rows: 30rem 50rem ;
+        margin: 0 3rem;
+        row-gap: 1.1rem;
+        column-gap: 0.5rem;
+    }
+    
+    .main-1-text-container{
+        order: -1;
+    }
+    .main-1-img{
+        margin-left: -5rem;
+        max-width: 25rem;
+        height: 100%;
+        
+    }
+    .main-1-text-container{
+        justify-content: center;
+    }
+    .main-1-head{
+        width: 15rem;
+    }
+
+    .main-2_1-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-2-img_text-container{
+        width: 100%;
+    }
+
+    .main-2_2-img{
+        width: 100%;
+        height: 100%;  
+    }
+    .main-2-text-container{
+        height: 100%;
+    }
+    .main-2-head{
+        font-size: 3rem;
+    }
+    .main-2-content{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 55rem){
+    .main-content-container{ 
+        grid-template-columns: 23rem 23rem;
+        grid-template-rows: 30rem 1fr;
+    }
+
+    .main-1-img{
+        max-width: 28rem;   
+    }
+    .main-2-img_text-container{
+        display: grid;
+        grid-template-rows: 18rem 1fr;
+        gap: 0;
+    }
+
+    .main-2_2-img{
+       max-width: 100%;
+       height: 95%;
+    }
+    .main-2-text-container{
+        height: 24rem;
+    }
+}
+
+
+@media only screen and (min-width:76.8rem){
+    .main-content-container{ 
+        grid-template-columns: 30rem 35rem;
+        grid-template-rows: 30rem 1fr;
+        margin: 0 10rem;
+    }
+
+    .main-1-head{
+        width: 20rem;
+    }
+    .main-1-content{
+        width: 20rem;
+    }
+
+    .main-1-img{
+        max-width: 35rem;
+        width: 35rem;
+        margin-left: 0;
+        
+    }
+
+    .main-2_2-img-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .main-2_2-img{
+        width: 27rem;
+    }
+
+    .main-2_1-img{
+        width: 36.5rem;
+        height: 100%;
+    }
+
+    .main-2-text-container{
+        width: 27rem;
+        height: 100%;
+        display: flex;
+        margin-left: 8rem;
+    }
+    .main-2-img_text-container{
+        row-gap: 0.5rem;
+    }
+    .main-2-head{
+        width: 20rem;
+    }
+    .main-2-content{
+        width: 20rem;
+    }
+}
+
+@media only screen and (min-width:99.8rem){
+    .main-content-container{
+        margin: 0 20rem;
+    }
+    
+}

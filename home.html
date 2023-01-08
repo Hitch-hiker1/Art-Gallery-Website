@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="Main-styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Art gallery website</title>
+</head>
+
+<body>    
+<header class="header-container">
+  <div class="dark-background"></div>
+  <picture>
+    <source media="screen and (min-width: 78rem)" srcset="assets\desktop\image-hero.jpg, assets\desktop\image-hero@2x.jpg 2x">
+    <source media="screen and (min-width: 48rem)" srcset="assets\tablet\image-hero.jpg, assets\tablet\image-hero@2x.jpg 2x">
+    <img class="header-img" src="assets\mobile\image-hero.jpg" srcset="assets\mobile\image-hero@2x.jpg 2x" alt="this is hero image">
+  </picture>
+  <div class="head-text-container">
+    <h1 class="desktop-header-logo-text"> MODERN <br>ART GALLERY</h1> 
+    <img class="header-logo" src="assets\logo-dark.svg">
+    <p class="header-content">
+      The arts in the collection of the Modern Art Gallery all started 
+      from a spark of inspiration. Will these pieces inspire you? Visit 
+      us and find out.
+    </p>
+    <div class="header-move-to-location_page-container">
+        <a class="header-move-to-location_page" href="location.html">OUR LOCATION</a>
+        <div class="arrow-icon-container">
+          <img class="arrow-icon" src="assets\icon-arrow-right.svg" alt="this is a icon of right Arrow">
+        </div>
+      </div>
+  </div>  
+</header>
+
+<section>
+  <div class="main-content-container" >
+    <div class="main-1-img-container">
+      <picture>
+        <source media="screen and (min-width: 78rem)" srcset="assets\desktop\image-grid-1.jpg, assets\desktop\image-grid-1@2x.jpg 2x">
+        <source media="screen and (min-width: 48rem)" srcset="assets\tablet\image-grid-1.jpg, assets\tablet\image-grid-1@2x.jpg 2x">
+        <img class="main-1-img" src="assets\mobile\image-grid-1.jpg" srcset="assets\mobile\image-grid-1@2x.jpg 2x" alt="this is Grid 1 image">
+      </picture>
+    </div>
+    <div class="main-1-text-container">
+      <h1 class="main-1-head"> YOUR DAY AT THE GALLERY </h1>
+      <p class="main-1-content" >Wander through our distinct collections and find new insights about 
+        our artists. Dive into the details of their creative process.</p>
+    </div>
+    <div class="main-2_1-img-container">
+      <picture>
+        <source media="screen and (min-width: 78rem)" srcset="assets\desktop\image-grid-2.jpg, assets\desktop\image-grid-2@2x.jpg 2x">
+        <source media="screen and (min-width: 48rem)" srcset="assets\tablet\image-grid-2.jpg, assets\tablet\image-grid-2@2x.jpg 2x">
+        <img class="main-2_1-img" src="assets\mobile\image-grid-2.jpg" srcset="assets\mobile\image-grid-2@2x.jpg 2x" alt="this is Grid 2 image">
+      </picture>
+    </div>
+    <div class="main-2-img_text-container">
+      <div class="main-2_2-img-container">
+        <picture>
+         <source media="screen and (min-width: 78rem)" srcset="assets\desktop\image-grid-3.jpg, assets\desktop\image-grid-3@2x.jpg 2x">
+          <source media="screen and (min-width: 48rem)" srcset="assets\tablet\image-grid-3.jpg, assets\tablet\image-grid-3@2x.jpg 2x">
+          <img class="main-2_2-img" src="assets\mobile\image-grid-3.jpg" srcset="assets\mobile\image-grid-3@2x.jpg 2x" alt="this is Grid 3 image">
+        </picture>
+      </div>
+      <div class="main-2-text-container"> 
+        <h1 class="main-2-head">COME &amp; BE INSPIRED </h1> 
+        <p class="main-2-content">   We’re excited to welcome you to our gallery and see how our collections influence you. </p>
+      </div>
+    </div>
+  </div>
+</section> 
+  
+<footer>
+  <img class="footer-logo" src="assets\logo-light.svg">
+  <p class="footer-content">The Modern Art Gallery is free to all visitors and open seven days a week 
+    from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+  <div class="footer-icons-container">
+    <img class="icon" src="assets\icon-facebook.svg">
+    <img class="icon" src="assets\icon-instagram.svg">
+    <img class="icon" src="assets\icon-twitter.svg">
+  </div>
+</footer>
+</body>
+</html>
